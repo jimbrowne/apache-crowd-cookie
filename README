@@ -1,0 +1,52 @@
+Apache::CrowdCookieAuth - Apache authentication handler that uses
+Atlassian Crowd and the Crowd cookie, rather than HTTP Basic Auth.
+
+login.cgi - Perl CGI script to handle login, logout, and login with
+redirection.
+
+OVERVIEW
+
+This perl module allows you to configure Apache to use Atlassian Crowd
+to handle authentication using the crowd domain cookie.  This module
+is based on a combination of Atlassian's CrowdAuth code and
+SourceSense's modifications.  Rather than patch Atlassian's code
+on-disk, Jim created a new self-contained module with a different
+name.
+
+Hopefully Atlassian will adopt the minor changes to their Perl library
+code so this separate module can cease to exist.
+
+SEE ALSO
+
+http://confluence.atlassian.com/x/rgGY
+http://www.atlassian.com/crowd
+http://opensource.sourcesense.com/confluence/display/CPL/Crowd+Apache+Connector
+http://forums.atlassian.com/thread.jspa?threadID=23732
+http://jira.atlassian.com/browse/CWD-1440
+
+AUTHORS
+
+Original Perl library by Atlassian. Cookie code by Gustavo Nalle
+Fernandes (g.fernandes@sourcesense.com).  login.cgi code by Marko
+Nordberg.  Packaged into one item and changed to CrowdCookieAuth and
+login.cgi enhancements by Jim Browne (http://blog.jbrowne.com)
+
+COPYRIGHT AND LICENSE
+
+Perl Module:
+
+Copyright (C) 2007 by Atlassian
+Copyright (C) 2009 by Gustavo Nalle Fernandes (g.fernandes@sourcesense.com)
+Copyright (c) 2010 by Jim Browne, assigned to Atlassian
+
+This library is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself, either Perl version 5.8.5 or,
+at your option, any later version of Perl 5 you may have available.
+
+Associated login.cgi script:
+
+Copyright (C) 2008 by Marko Nordberg
+
+"Permission is granted to use [login.cgi] free for any usage"
+
+Copyright (C) 2010 by Jim Browne, assigned to Atlassian, Perl license
