@@ -200,7 +200,7 @@ sub handler {
 	my $isValid;
 	if(defined $token) {   
 	    $isValid = isValidPrincipalToken($soaphost,$app_name,$apptoken,$token,$userAgent,$remoteAddress,$base_server,$useproxy);
-	    $rlog->error("token :$token: userAgent :$userAgent: address :$remoteAddress: useproxy :$useproxy: isValid :$isValid:");
+	    #$rlog->error("token :$token: userAgent :$userAgent: address :$remoteAddress: useproxy :$useproxy: isValid :$isValid:");
 	}
 
 	if(!defined $isValid) {
