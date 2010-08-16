@@ -1,0 +1,19 @@
+Source: libapache-crowdcookieauth-perl
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 7)
+Build-Depends-Indep: perl
+Maintainer: Jim Browne <jbrowne@jbrowne.com>
+Standards-Version: 3.8.3
+Homepage: http://github.com/jimbrowne/apache-crowd-cookie
+
+Package: libapache-crowdcookieauth-perl
+Architecture: all
+Depends: libatlassian-crowd-perl libsoap-lite-perl
+Description: Apache authentication handler that uses Atlassian Crowd.
+ This Module allows you to configure Apache to use Atlassian Crowd to handle
+ authentication using the crowd domain cookie. Apache::CrowdCookieAuth is
+ based on a combination of Atlassian's CrowdAuth code and SourceSense's
+ modifications. Rather than patch Atlassian's code on-disk, I created a new
+ self-contained module with a different name.
+ .
